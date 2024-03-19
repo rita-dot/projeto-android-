@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+ 
+    <header>
+        <h1>Formulário</h1>
+       
+        <div class="data container"></div>
+        </div>
+       
+    </header>
+ 
+    <nav>
+        <a href="../Site/index.html" target="_blank">Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Fale connosco</a>
+    </nav>
+ 
+    <main>
+        <article>
+                <section>
+                    <h1>Contacto</h1>
+                    <p>Seja Bem Vindo(a) novamente. Faz favor preencha este formulário e dar-nos feedback!</p>
+                    <form action="registo.php" method="post">
+                        <label for="inome">Nome Completo</label>
+                        <input type="text" name="nome" id="inome" placeholder="Nome completo" minlength="5" maxlength="30" required>
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" placeholder="utilizador@email.com" autocomplete="off" required>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+                        <fieldset>
+                            <br>
+                            <legend>Sexo:</legend>
+                                <input type="radio" id="ifeminino" name="genero" value="feminino" checked>
+                                <label for="feminino">Feminino</label>
+                            <br>
+                                <input type="radio" id="imasculino" name="genero" value="masculino">
+                                <label for="masculino"> Masculino</label>
+                            <br>
+                                <input type="radio" id="ioutro" name="genero" value="outro">
+                                <label for="outro">Outro</label>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <br>
+                            <legend>Qual sua idade?</legend>
+                                <input type="radio" id="iidade" name="idade" value="18_22" checked>
+                                <label for="idade">18 a 22</label>
+                            <br>
+                                <input type="radio" id="iidade" name="idade" value="23_30">
+                                <label for="idade"> 23 a 30</label>
+                            <br>
+                                <input type="radio" id="iidade" name="idade" value="mais31">
+                                <label for="idade">acima de 31</label>
+                        </fieldset>
+                        <br>
+                        
+                        <!--<br>
+                        <fieldset>
+                            <p>
+                                <label for="ifile">Foto de um gastronomia do seu país:</label>
+                                <input type="file" name="file" id="ifile" accept=".jpg, .jpeg, .png, .gif, image/jpeg, image/png, image/gif" multiple>
+                            </p>
+                        </fieldset>-->
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+        </article>    
+    </main>
+</body>
